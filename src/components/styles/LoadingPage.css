@@ -1,0 +1,46 @@
+.loading-page {
+  background: rgb(6,39,117);
+  background: -moz-linear-gradient(45deg, rgba(6,39,117,1) 25%, rgba(18,110,15,1) 75%);
+  background: -webkit-linear-gradient(45deg, rgba(6,39,117,1) 25%, rgba(18,110,15,1) 75%);
+  background: linear-gradient(45deg, rgba(6,39,117,1) 25%, rgba(18,110,15,1) 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#062775",endColorstr="#126e0f",GradientType=1);
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #191654;
+}
+  
+#svg {
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+  
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+  
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+  
+.logo-name {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}

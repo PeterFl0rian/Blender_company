@@ -1,0 +1,64 @@
+#contact-button {
+  background: rgb(0,82,164);
+  background: -moz-linear-gradient(90deg, rgba(0,82,164,1) 30%, rgba(0,31,62,1) 70%);
+  background: -webkit-linear-gradient(90deg, rgba(0,82,164,1) 30%, rgba(0,31,62,1) 70%);
+  background: linear-gradient(90deg, rgba(0,82,164,1) 30%, rgba(0,31,62,1) 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0052a4",endColorstr="#001f3e",GradientType=1);
+}
+  
+label {
+  display:flex;
+  flex-direction:column;
+  width:70px;
+  cursor:pointer;
+}
+   
+label span{
+  background: #111011;
+  border-radius:10px;
+  height:7px;
+  margin: 7px 0;
+  transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6); 
+}
+   
+span:nth-of-type(1){
+  width:50%;
+}
+   
+span:nth-of-type(2){
+  width:100%;
+}
+   
+span:nth-of-type(3){
+  width:75%;
+}
+   
+input[type="checkbox"]{
+  display:none;
+}
+    
+input[type="checkbox"]:checked ~ span:nth-of-type(1){
+  transform-origin:bottom;
+  transform:rotatez(45deg) translate(8px,0px)
+}
+  
+input[type="checkbox"]:checked ~ span:nth-of-type(2){   
+  transform-origin:top;
+  transform:rotatez(-45deg)
+}
+    
+input[type="checkbox"]:checked ~ span:nth-of-type(3){ 
+  transform-origin:bottom;
+  width:50%;
+  transform: translate(30px,-11px) rotatez(45deg);
+}
+  
+.Canvascss {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+  
+.Canvascss canvas {
+  max-width: 600px !important;
+  max-height: 600px !important;
+}

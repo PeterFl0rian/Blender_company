@@ -1,0 +1,13 @@
+#header-div {
+  background-color: #111011; 
+  background-size: cover;
+  width: 100%;
+}
+
+#header-bg {
+  background: rgb(17,16,17);
+  background: -moz-linear-gradient(0deg, rgba(17,16,17,1) 1%, rgba(17,16,17,0) 5%);
+  background: -webkit-linear-gradient(0deg, rgba(17,16,17,1) 1%, rgba(17,16,17,0) 5%); 
+  background: linear-gradient(0deg, rgba(17,16,17,1) 1%, rgba(17,16,17,0) 5%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111011",endColorstr="#111011",GradientType=1);
+}
